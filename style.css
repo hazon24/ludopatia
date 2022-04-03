@@ -1,0 +1,247 @@
+:root {
+    --testo: rgb(214, 150, 30);
+}
+
+*{
+    font-family: 'Saira Condensed', sans-serif;
+}
+
+html,
+body {
+    /*background-color: #333333; */
+    background-image: url(images/furto2.jpg);
+    height: 2500px;
+    width: 100%;
+    margin: 0 0 0 0;
+}
+
+section {
+    /*border: 10px solid white;*/
+    height: 15%;
+    width: 100%;
+    display: block;
+}
+
+.tendopoli {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+    opacity: 92%;
+    height: 100%;
+}
+
+h1,
+h3,
+p,
+pre,
+h2 {
+    color: white;
+}
+
+
+/*menu*/
+
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f0f0f;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 100;
+}
+
+
+#nav li {
+    float: left;
+}
+
+.link a {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.link a:hover {
+    background-color: #111;
+    color: white;
+}
+
+
+/*link */
+
+.probaibilmente a {
+    display: block;
+    text-decoration: none;
+    color: gray;
+    margin-left: 0px;
+    padding: 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    
+}
+
+.probaibilmente a:hover {
+    color: white;
+}
+
+/*interno section*/
+
+.interno {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+
+/* immagine */
+
+.immagine {
+    height: 100%;
+    width: 50%;
+}
+
+.immagine img {
+    display: block;
+    margin: 10%;
+    width: 80%;
+    height: auto;
+}
+
+
+/* titolo */
+
+#Titolo {
+    margin-top: 100px;
+    text-align: center;
+    line-height: 200px;
+}
+
+
+/* testo */
+
+.testo {
+    height: 100%;
+    width: 50%;
+    text-align: right;
+    margin-left: 2%;
+    color: white;
+}
+
+.immagine {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+/*resp img*/
+
+@media only screen and (max-width: 700px) {
+    .immagine {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .immagine {
+        width: 49.99999%;
+    }
+}
+
+
+/*resp testo*/
+
+@media screen and (min-width: 1401px) {
+    div.testo {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    div.testo {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    div.testo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div.testo {
+        font-size: 16px;
+    }
+}
+
+
+/*resp titolo*/
+
+@media screen and (min-width: 801px) {
+    #Titolo {
+        
+        font-size: 120px;
+        line-height: 200px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #Titolo {
+        margin-top: 0px;
+        font-size: 80px;
+        line-height: 280px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #Titolo {
+        margin-top: 0px;
+        font-size: 50px;
+        line-height: 320px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #Titolo {
+        margin-top: 0px;
+        font-size: 30px;
+        line-height: 400px;
+    }
+}
+
+/*animazione*/
+
+.digi{
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      scrittura 3.5s steps(40, end),
+      lampegio .75s step-end infinite;
+
+}
+  
+
+  @keyframes scrittura {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  
+  @keyframes lampegio {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
